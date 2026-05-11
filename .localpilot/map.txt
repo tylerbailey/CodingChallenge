@@ -1,0 +1,64 @@
+## WORKSPACE EXECUTIVE SUMMARY (YAML)
+# Generated: 2026-05-11T13:16:15.3336635-05:00
+# Root: C:\Users\Tyler\source\repos\ShoppingCart
+Architecture:
+  Type: Backend (C#/.NET)
+  Scale: 21 relevant source files
+  Components: 0
+  Controllers: 0
+  Models: 3
+  Services: 4
+---
+- File: CodingChallengeTests\CodingChallengeTests.csproj
+  Preview: "<Project Sdk='Microsoft.NET.Sdk'>  <PropertyGroup>   <TargetFramework>net10.0</TargetFramework>   <LangVersion>latest</LangVersion>   <ImplicitUsings>..."
+- File: ShoppingCart\CodingChallenge.csproj
+  Preview: "<Project Sdk='Microsoft.NET.Sdk'>  <PropertyGroup>   <OutputType>Exe</OutputType>   <TargetFramework>net10.0</TargetFramework>   <ImplicitUsings>enabl..."
+- File: CodingChallenge.slnx
+  Preview: "<Solution>  <Project Path='CodingChallengeTests/CodingChallengeTests.csproj' />  <Project Path='ShoppingCart/CodingChallenge.csproj' /> </Solution> "
+- File: CodingChallengeTests\GroceryStoreCheckoutCalculatorTests.cs
+  Symbols: [Calculate_ChristmasItem_InDecemberAfterDay25_Applies90PercentDiscount, Calculate_FoodItemWithWeight_DuringSeniorHours_Applies10PercentDiscount, Save_Transaction_CanBeRetrievedById, Calculate_EmptyCart_ReturnsZero, Calculate_ZeroQuantityAndWeight_ReturnsZero, Calculate_WithNoDiscountService_ReturnsFullPrice, GetUnits_BothZero_ReturnsZero, NoDiscountCalculatorService, GroceryStoreCheckoutCalculatorTests, SetUp, SetUp, Calculate_ChristmasItem_InJanuaryBeforeDay15_AppliesClearanceDiscount, GetUnits_WeightIsZero_ReturnsQuantity, Calculate_FirstResponder_Multiple_AnyCategory_AppliesFirstResponderDiscount, Calculate_ChristmasItem_QuantityIsMultiplied]
+  Preview: "using CodingChallenge; using CodingChallenge.Enums; using CodingChallenge.Models.Implementations; using CodingChallenge.Repositories.Implementations; ..."
+- File: ShoppingCart\Program.cs
+  Symbols: [ChristmasShoppingAtTheGroceryStore, Program, BuyingFood, would, Main]
+  Preview: "// Ncontracts Code Challenge // // // Please take a look at the code below. // Even though the program runs and generates correct result, we consider ..."
+- File: ShoppingCart\Enums\Enums.cs
+  Preview: "namespace CodingChallenge.Enums {   /**   * Enumeration representing the different product categories available in the grocery store.    * This allows..."
+- File: ShoppingCart\Models\Implementations\CartItem.cs
+  Preview: "using CodingChallenge.Enums; using CodingChallenge.Models.Interfaces; namespace CodingChallenge.Models.Implementations {   /**   * Object representing..."
+- File: ShoppingCart\Models\Implementations\Transaction.cs
+  Preview: "using CodingChallenge.Models.Interfaces; using System.Collections.Immutable; namespace CodingChallenge.Models.Implementations {   /**   * Object repre..."
+- File: ShoppingCart\Models\Interfaces\IEntity.cs
+  Symbols: [for]
+  Preview: "namespace CodingChallenge.Models.Interfaces {   /**   * Base interface for entities that have an Id property, allowing consistent    * identification ..."
+- File: ShoppingCart\Repositories\Implementations\Repository.cs
+  Preview: "using CodingChallenge.Models.Interfaces; using CodingChallenge.Repositories.Interfaces; namespace CodingChallenge.Repositories.Implementations {   /**..."
+- File: ShoppingCart\Repositories\Interfaces\IRepository.cs
+  Symbols: [for]
+  Preview: "using CodingChallenge.Models.Interfaces; namespace CodingChallenge.Repositories.Interfaces {   /**   * Generic repository interface for performing bas..."
+- File: ShoppingCart\Rules\Implementations\Christmas20Rule.cs
+  Symbols: [Christmas20Rule]
+  Preview: "using CodingChallenge.Enums; using CodingChallenge.Models.Implementations; using CodingChallenge.Rules.Interfaces; namespace CodingChallenge.Rules.Imp..."
+- File: ShoppingCart\Rules\Implementations\Christmas60Rule.cs
+  Symbols: [Christmas60Rule, IsMatch]
+  Preview: "using CodingChallenge.Enums; using CodingChallenge.Models.Implementations; using CodingChallenge.Rules.Interfaces; namespace CodingChallenge.Rules.Imp..."
+- File: ShoppingCart\Rules\Implementations\Christmas90Rule.cs
+  Symbols: [Christmas90Rule]
+  Preview: "using CodingChallenge.Enums; using CodingChallenge.Models.Implementations; using CodingChallenge.Rules.Interfaces; namespace CodingChallenge.Rules.Imp..."
+- File: ShoppingCart\Rules\Implementations\FirstResponderRule.cs
+  Symbols: [IsMatch, FirstResponderRule]
+  Preview: "using CodingChallenge.Models.Implementations; using CodingChallenge.Rules.Interfaces; using System; using System.Collections.Generic; using System.Tex..."
+- File: ShoppingCart\Rules\Implementations\SeniorHoursRule.cs
+  Symbols: [IsMatch, SeniorHoursRule]
+  Preview: "using CodingChallenge.Enums; using CodingChallenge.Models.Implementations; using CodingChallenge.Rules.Interfaces; using System; using System.Collecti..."
+- File: ShoppingCart\Rules\Interfaces\IDiscountRule.cs
+  Symbols: [IDiscountRule]
+  Preview: "using CodingChallenge.Models.Implementations; using System; using System.Collections.Generic; using System.Text; namespace CodingChallenge.Rules.Inter..."
+- File: ShoppingCart\Services\Implementations\GroceryCheckoutCalculatorService.cs
+  Preview: "using CodingChallenge.Services.Interfaces; using CodingChallenge.Models.Implementations; namespace CodingChallenge.Services.Implementations {   /**   ..."
+- File: ShoppingCart\Services\Implementations\NonStackingDiscountCalculatorService.cs
+  Symbols: [NonStackingDiscountCalculatorService, CalculateDiscountedPrice]
+  Preview: "using CodingChallenge.Models.Implementations; using CodingChallenge.Rules.Interfaces; using CodingChallenge.Services.Interfaces; namespace CodingChall..."
+- File: ShoppingCart\Services\Interfaces\ICheckoutCalculatorService.cs
+  Preview: "using CodingChallenge.Models.Implementations; namespace CodingChallenge.Services.Interfaces {   /**   * Interface for calculating the total price of a..."
+- File: ShoppingCart\Services\Interfaces\IDiscountCalculatorService.cs
+  Preview: "using CodingChallenge.Models.Implementations; namespace CodingChallenge.Services.Interfaces {   /**   * Interface for calculating discounted prices fo..."
